@@ -16,3 +16,69 @@
 /* Readable content at every screen size. */
 .hero-description,.section-heading>p,.card-copy>p:not(.card-kicker),.plan-intro>p:not(.eyebrow),.plan-benefits p,.location-copy>p:not(.eyebrow),.faq-list details>p{font-size:1rem}
 nav>a:not(.button),.button-small,.text-link,.hero-note p,.social-links a,.community h3,.youth-banner p:not(.eyebrow),.faq-list summary{font-size:.875rem}
+
+/* Original identity, clear photography and an easier-to-read plan. */
+.brand-logo{display:block;width:60px;height:60px;object-fit:contain;background:#fff;border-radius:50%;flex-shrink:0}
+.footer .brand-logo,.map-caption .brand-logo{width:54px;height:54px}
+.photo-button{appearance:none;position:relative;display:block;width:100%;height:100%;border:0;padding:0;background:#24291e;cursor:zoom-in;overflow:hidden;color:var(--text)}
+.photo-button>img{width:100%;height:100%;object-fit:cover;filter:none;transition:transform .4s}
+.photo-button:hover>img{transform:scale(1.018)}
+.photo-zoom{position:absolute;right:14px;bottom:14px;display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:#11130fe6;border:1px solid #ffffff66;color:#fff}
+.photo-zoom .icon{width:19px;height:19px}
+.hero-visual{height:auto;border-radius:5px 36px 5px 5px;background:var(--surface);overflow:hidden}
+.hero-visual:after{display:none}
+.hero-visual .photo-button{height:auto;aspect-ratio:3/4}
+.hero-visual .photo-button img{object-fit:contain}
+.image-bottom-label{position:static;background:var(--surface);padding:22px 26px}
+.image-bottom-label>span{font-size:.75rem;color:var(--muted)}
+.image-bottom-label strong{font-size:2rem;margin-top:6px}
+.card-image{height:auto;aspect-ratio:4/3;background:#23271e}
+.card-image .photo-button>img{object-fit:contain}
+.card-image .photo-button{background:#20251c}
+.training-card:hover .card-image img{transform:none}
+.rhythm-art{height:auto;aspect-ratio:4/3}
+.rhythm-art>span:first-child{font-size:clamp(3.25rem,4.3vw,4.5rem)}
+.plan-layout{grid-template-columns:.9fr 1.1fr;gap:55px}
+.plan-benefits{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.plan-benefits article,.plan-benefits article:first-child{display:flex;flex-direction:column;align-items:flex-start;gap:19px;margin:0;padding:23px;background:#ffffff26;border:1px solid #36550d40;border-radius:12px}
+.plan-benefits .benefit-icon{display:grid;place-items:center;width:46px;height:46px;background:#20300b;border-radius:12px;color:var(--lime)}
+.plan-benefits .benefit-icon .icon{width:25px;height:25px;margin:0;stroke-width:1.6}
+.plan-benefits h3{font-size:1.0625rem;line-height:1.35;margin-bottom:10px}
+.plan-benefits p{font-size:.9375rem;line-height:1.75;color:#293619}
+.gallery{grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.gallery figure,.gallery .gallery-large{height:auto;display:flex;flex-direction:column;grid-column:auto;border:1px solid var(--line)}
+.gallery .photo-button{aspect-ratio:3/4;height:auto}
+.gallery img,.gallery-large img{filter:none;object-fit:contain;object-position:center}
+.gallery figcaption{position:static;inset:auto;background:var(--surface);padding:18px 17px;font-size:.75rem;line-height:1.6;letter-spacing:.07em}
+.community h3{max-width:none;font-size:1rem;font-weight:700}
+.community>div:first-child{align-items:flex-start}
+.community>div:first-child>.icon{margin-top:4px}
+.instagram-since{font-size:.875rem;margin-top:5px}
+.youth-banner{padding:38px 40px;gap:36px;justify-content:space-between;border-radius:4px}
+.youth-banner>div{flex:1}
+.youth-banner .eyebrow{font-size:.75rem;margin-bottom:12px}
+.youth-banner h2{font-size:2.6rem;line-height:1.08;margin-bottom:12px}
+.youth-banner p:not(.eyebrow){font-size:1rem;max-width:520px}
+.youth-banner .button{flex-shrink:0;max-width:none;white-space:normal;margin:0}
+.location-section{grid-template-columns:1fr 1.15fr;align-items:start;gap:65px}
+.location-address{align-items:flex-start;line-height:1.7}
+.location-address>.icon{margin-top:5px}
+.opening-hours{margin-top:32px;max-width:405px;border-top:1px solid var(--line);padding-top:24px}
+.opening-hours h3{font-size:1rem;margin-bottom:16px}
+.opening-hours p{display:flex;justify-content:space-between;gap:15px;font-size:.875rem;margin-bottom:8px;flex-wrap:wrap}
+.opening-hours p strong{color:var(--text);font-weight:500}
+.opening-hours small{display:block;font-size:.75rem;color:var(--muted);line-height:1.8;margin-top:12px}
+.opening-hours small a{text-decoration:underline;text-underline-offset:3px}
+.map-frame iframe{height:510px}
+.map-caption{align-items:center}
+.photo-dialog{position:fixed;inset:0;width:min(1160px,calc(100% - 32px));max-width:none;max-height:calc(100dvh - 32px);padding:0;border:1px solid #ffffff30;border-radius:8px;background:#111;color:var(--text);overflow:auto}
+.photo-dialog::backdrop{background:#000d;backdrop-filter:blur(6px)}
+.photo-dialog>img{display:block;width:100%;height:calc(100dvh - 115px);object-fit:contain;background:#111}
+.photo-dialog>p{font-size:.875rem;line-height:1.6;padding:15px 22px;color:#ebeee5}
+.photo-close{position:sticky;top:12px;float:right;z-index:2;width:44px;height:44px;margin:12px 12px -56px 0;border:1px solid #ffffff77;border-radius:50%;background:#111d;color:white;font-size:2rem;line-height:1;cursor:pointer}
+.photo-close:hover{background:var(--lime);color:var(--bg)}
+@media(max-width:1100px){.hero{align-items:start}.hero-visual .photo-button{aspect-ratio:3/4}.plan-layout{gap:35px}.plan-benefits article,.plan-benefits article:first-child{padding:20px}.gallery{gap:16px}.location-section{gap:35px}.youth-banner{padding:30px}}
+@media(max-width:900px){.plan-layout{grid-template-columns:1fr}.plan-intro{max-width:560px}.plan-benefits{gap:20px}.plan-benefits article,.plan-benefits article:first-child{padding:25px}.location-section{grid-template-columns:1fr;gap:32px}.map-frame iframe{height:430px}.location-copy>p:not(.eyebrow){max-width:600px}.opening-hours{max-width:100%}.opening-hours p{max-width:470px}.community{align-items:flex-start}.community h3{max-width:none}.social-links{justify-content:flex-start}.youth-banner{flex-direction:column;align-items:flex-start;gap:24px}.youth-banner>div{width:100%}.youth-banner .button{align-self:flex-start}.hero-visual .photo-button{aspect-ratio:3/4}.image-bottom-label{padding:19px}.image-bottom-label strong{font-size:1.6rem}}
+@media(max-width:600px){.brand-logo{width:52px;height:52px}.brand-name{font-size:1rem}.hero-copy{padding-bottom:0}.hero-visual{border-radius:4px 28px 4px 4px}.hero-visual .photo-button{aspect-ratio:3/4}.hero-visual .photo-button img{object-fit:contain}.image-bottom-label{padding:20px 22px}.image-bottom-label strong{font-size:1.9rem}.card-image,.rhythm-art{height:auto;aspect-ratio:4/3}.rhythm-art>span:first-child{font-size:4.6rem}.plan-benefits{grid-template-columns:1fr;gap:16px}.plan-benefits article,.plan-benefits article:first-child{display:grid;grid-template-columns:46px 1fr;align-items:start;gap:18px;padding:23px 20px}.plan-benefits p{font-size:1rem}.plan-benefits h3{font-size:1rem}.gallery{grid-template-columns:1fr;gap:24px}.gallery figure,.gallery .gallery-large{height:auto}.gallery .photo-button{height:auto;aspect-ratio:3/4}.gallery figcaption{font-size:.75rem;padding:17px 20px}.community{gap:21px}.youth-banner{padding:27px 24px}.youth-banner h2{font-size:2.2rem}.youth-banner p:not(.eyebrow){font-size:.9375rem}.youth-banner .button{width:100%;align-self:stretch}.location-section{gap:32px}.map-frame iframe{height:390px}.map-caption{padding:20px}.map-caption .brand-logo{width:48px;height:48px}.photo-dialog>img{height:calc(100dvh - 140px)}.photo-dialog>p{padding-inline:16px}.floating-whatsapp{bottom:15px;right:15px}}
+
+.floating-whatsapp{width:56px;height:56px;padding:14px;border-radius:50%;justify-content:center;right:18px;bottom:18px}.floating-whatsapp>span{display:none}
